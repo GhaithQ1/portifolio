@@ -1,0 +1,457 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Centra,sans-serif;
+height: 100vh;
+background-image: url(../image/site-bg.svg);
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+}
+
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media(max-width:1200px){
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  @media(max-width:768px){
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Small */
+  
+  /* @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  } */
+  
+  /* Medium */
+  
+  /* @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  } */
+  
+  /* Large */
+  
+  /* @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } */
+
+
+header{
+    height: 70px;
+    position: relative;
+}
+header img{
+    position: absolute;
+    z-index: -100;
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+    mix-blend-mode:lighten;
+}
+header .image1{
+    right: 0;
+    transform: rotate(90deg);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header h1{
+  color: white;
+}
+header h1 >span{
+    color: #e36244;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+header a{
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header ul a:hover{
+    color: #e36244;
+}
+
+
+.hero{
+    height: calc(100vh - 70px);
+    position: relative;
+}
+@media(max-width:768px){
+    .skills{
+        height: auto;
+
+    }
+}
+.hero .container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+
+
+.hero .container .contact{
+    width: 50%;
+}
+@media(max-width:992px){
+    .hero .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .container .contact{
+        width: 90%;
+    }
+}
+.hero .container .contact h2{
+    padding: 10px;
+    background-image: linear-gradient(to left, #64243c50,#df864250);
+    border: 1px solid white;
+    color: white;
+    width: fit-content;
+    font-size: 20px;
+}
+.hero .container .contact h1{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+}
+.hero .container .contact h1 > span{
+    color: #e36244;
+}
+.hero .container .contact p{
+    color: #c5c5c5;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.hero .container .contact a{
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 148px;
+    margin-top: 40px;
+
+}
+
+@media(max-width:768px){
+    .hero .container .contact h1{
+        font-size: 30px;
+    }
+}
+
+.hero .container .contact a:hover i{
+    transform: translate(10px ,-12px);
+}
+.hero .container .contact a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+@keyframes move{
+    100%{
+        transform: translatey(-10px);
+    }
+}
+
+.hero .container .contact img{
+    animation: rotet 5s infinite linear ;
+    width: 100%;
+}
+@keyframes rotet{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.hero .img1{
+    width: 70%;
+    mix-blend-mode: lighten;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10000;
+
+}
+
+.hero ul{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 15px;
+    background-color: #23232370;
+    border-radius: 15px;
+}
+@media(max-width:768px){
+    .hero ul{
+        flex-direction: row;
+        width: 90%;
+        bottom: 0px;
+        top: auto;
+        justify-content: space-between;
+    }
+}
+
+.hero ul a{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+}
+.hero ul a:hover i{
+    color: #e36244;
+}
+
+.hint--top:after,
+.hint--bottom:after,
+.hint--left:after{
+    background-color: #e36244;
+    color: white;
+    letter-spacing: 1.1px;
+    border-radius: 6px;
+    text-shadow: none;
+    font-weight: bold;
+    box-shadow: 0 0 4px 0 #e36244;
+}
+
+
+.transition{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.transition > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.transition > div:nth-child(1){
+    background-color: #2e2257;
+    z-index: 5;
+}
+
+
+.transition > div:nth-child(2){
+background-color: #3a2d70;
+z-index: 4;
+}
+.transition > div:nth-child(3){
+background-color: #4b3893;
+z-index: 3;
+
+}
+
+
+/* skills */
+.skills .img2{
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    opacity: 0.8;
+}
+
+.skills .content{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+.skills .content .description{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skills .content .description h1{
+    color: white;
+    font-size: 40px;
+}
+.skills .content .description h1 > span{
+    color: #e36244;
+}
+.skills .content .description p{
+    color: #c5c5c5;
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 20px;
+}
+.skills .content .description .exper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills .content .description .exper .box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.skills .content .description .exper .box:nth-child(1){
+    padding-right: 30px;
+}
+.skills .content .description .exper .box:not(:last-child){
+    border-right: 1px solid #ffffff26;
+}
+
+.skills .content .description .exper .box:not(:first-child){
+    padding: 0 30px;
+}
+
+.skills .content .description .exper .box p,
+.skills .content .description .exper .box p span{
+    font-size: 30px;
+    font-weight: bold;
+    color: #e36244;
+    padding:0;
+    text-align: center;
+}
+.skills .content .description .exper .box span{
+    color: #c5c5c5;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+.skills .content .skills_image{
+    flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.skills .content .skills_image h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+.skills .content .skills_image .images{
+    width: 100%;
+}
+.skills .content .skills_image .images button{
+    background: none;
+    border: none;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.skills .content .skills_image .images .active,
+.skills .content .skills_image .images button:hover{
+    color: #e36244;
+}
+
+
+.skills .content .skills_image .images .active::before,
+.skills .content .skills_image .images button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e36244;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.skills .content .skills_image .images .active::before,
+.skills .content .skills_image .images button:hover::before{
+    width: 100%;
+}
+.skills .content .skills_image .images button:nth-child(1){
+    margin-left: 20px;
+}
+
+
+.skills .content .skills_image .images .web_images img{
+    width: 40px;
+    transition: 0.3s;
+    margin: 20px;
+}
+
+.skills .content .skills_image .images .web_images img:hover{
+    transform: scale(0.8) rotate(5deg);
+}
+
+
+.skills .content .skills_image .images .tools{
+  display: none;
+}
+
+.skills .content .skills_image .images .block{
+    display: block;
+}
+.skills .content .skills_image .images .none{
+display: none;
+}
+
+
+
+/* skills */
+
+.my-element {
+    --animate-duration: 1s;
+}
+
+
