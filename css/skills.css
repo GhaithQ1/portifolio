@@ -1,6 +1,7 @@
 .skills{
     height: calc(100vh - 70px);
     position: relative;
+    overflow: hidden;
 }
 @media(max-width:992px){
     .skills{
@@ -26,6 +27,8 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 10px;
+        height: calc(100vh - 70px);
+        align-items: center;
     }
     .skills .container .contact{
         width: 90%;
@@ -155,7 +158,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  width: 110vw;
   height: 100vh;
 }
 .transition > div{
@@ -192,7 +195,7 @@ z-index: 3;
 
 @media(max-width:992px){
     .skills .img2{
-        display: none;
+        right: 0;
     }
 }
 
@@ -227,18 +230,25 @@ z-index: 3;
     line-height: 1.7;
     padding-bottom: 20px;
 }
+@media(max-width:992px){
+    .skills .content .description h1{
+        font-size: 45px;
+    }
+    .skills .content .description p{
+        width: 90%;
+        font-size: 18px;
+    }
+}
 @media(max-width:768px){
     .skills .content .description h1{
         font-size: 30px;
+        text-align: center;
     }
+    
     .skills .content .description p{
         font-size: 14px;
-    }
-}
-
-@media(max-width:992px){
-    .skills .content .description p{
-        width: 90%;
+        text-align: center;
+        width: 100%;
     }
 }
 .skills .content .description .exper{
@@ -275,6 +285,20 @@ z-index: 3;
     padding:0;
     text-align: center;
 }
+
+@media(max-width:992px){
+    .skills .content .description .exper .box p,
+    .skills .content .description .exper .box p span{
+        font-size: 40px;
+    }
+}
+@media(max-width:7682px){
+    .skills .content .description .exper .box p,
+    .skills .content .description .exper .box p span{
+        font-size: 30px;
+    }
+}
+
 .skills .content .description .exper .box span{
     color: #c5c5c5;
     font-size: 15px;
@@ -342,6 +366,11 @@ z-index: 3;
     width: 40px;
     transition: 0.3s;
     margin: 20px;
+}
+@media(max-width:768px){
+    .skills .content .skills_image .images .web_images img{
+        width: 35px;
+    }
 }
 
 .skills .content .skills_image .images .web_images img:hover{

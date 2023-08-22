@@ -270,6 +270,7 @@ header ul a:hover{
     text-shadow: none;
     font-weight: bold;
     box-shadow: 0 0 4px 0 #e36244;
+    width: 100%;
 }
 
 
