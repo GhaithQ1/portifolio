@@ -124,6 +124,7 @@ header ul a:hover{
 .hero{
     height: calc(100vh - 70px);
     position: relative;
+    overflow: hidden;
 }
 @media(max-width:768px){
     .skills{
@@ -138,7 +139,9 @@ header ul a:hover{
     gap: 40px;
     height: 100%;
 }
-
+.hero .container .image{
+  
+}
 
 
 .hero .container .contact{
@@ -153,6 +156,10 @@ header ul a:hover{
         width: 90%;
     }
 }
+
+
+
+
 .hero .container .contact h2{
     padding: 10px;
     background-image: linear-gradient(to left, #64243c50,#df864250);
@@ -217,8 +224,22 @@ header ul a:hover{
         transform: rotate(360deg);
     }
 }
+
+.hero .container .image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+}
+@media(max-width:768px){
+    .hero .container .image{
+        width: 100%;
+    }
+}
+
 .hero .img1{
-    width: 70%;
+    width: 100%;
     mix-blend-mode: lighten;
     position: absolute;
     bottom: 0;
@@ -248,6 +269,7 @@ header ul a:hover{
         bottom: 0px;
         top: auto;
         justify-content: space-between;
+        
     }
 }
 
@@ -270,7 +292,6 @@ header ul a:hover{
     text-shadow: none;
     font-weight: bold;
     box-shadow: 0 0 4px 0 #e36244;
-    width: 100%;
 }
 
 
