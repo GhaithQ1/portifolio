@@ -72,3 +72,12 @@ const anima = document.querySelectorAll('.images > div');
 
 
 
+
+
+
+
+
+
+
+
+

@@ -21,8 +21,8 @@ overflow: hidden;
     }
 }
 .container {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -37,8 +37,8 @@ overflow: hidden;
   }
   @media(max-width:768px){
     .container {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -139,9 +139,6 @@ header ul a:hover{
     gap: 40px;
     height: 100%;
 }
-.hero .container .image{
-  
-}
 
 
 .hero .container .contact{
@@ -232,7 +229,7 @@ header ul a:hover{
   width: 60%;
   height: 100vh;
 }
-@media(max-width:768px){
+@media(max-width:992px){
     .hero .container .image{
         width: 100%;
     }
@@ -285,15 +282,23 @@ header ul a:hover{
 .hint--top:after,
 .hint--bottom:after,
 .hint--left:after{
-    background-color: #e36244;
-    color: white;
-    letter-spacing: 1.1px;
-    border-radius: 6px;
+    background-color: #fff;
+    color: black;
+    border-radius: 3px;
     text-shadow: none;
     font-weight: bold;
-    box-shadow: 0 0 4px 0 #e36244;
 }
 
+
+.hint--top:before{
+    border-top-color: white;
+}
+.hint--bottom:before{
+    border-bottom-color: white;
+}
+.hint--left:before{
+    border-left-color: white;
+}
 
 .transition{
   position: fixed;
@@ -301,6 +306,7 @@ header ul a:hover{
   right: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1000;
 }
 .transition > div{
     width: 100%;

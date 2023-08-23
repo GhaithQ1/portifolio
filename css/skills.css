@@ -143,19 +143,6 @@
     color: #e36244;
 }
 
-.hint--top:after,
-.hint--bottom:after,
-.hint--left:after{
-    background-color: #e36244;
-    color: white;
-    letter-spacing: 1.1px;
-    border-radius: 6px;
-    text-shadow: none;
-    font-weight: bold;
-    box-shadow: 0 0 4px 0 #e36244;
-}
-
-
 .transition{
   position: fixed;
   top: 0;
@@ -234,11 +221,11 @@ z-index: 3;
 }
 @media(max-width:992px){
     .skills .content .description h1{
-        font-size: 45px;
+        font-size: 35px;
     }
     .skills .content .description p{
         width: 90%;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 @media(max-width:768px){
@@ -257,6 +244,19 @@ z-index: 3;
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+@media(max-width:992px){
+    .skills .content .description .exper{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media(max-width:768px){
+    .skills .content .description .exper{
+        width: 100%;
+    }
 }
 .skills .content .description .exper .box{
     display: flex;
