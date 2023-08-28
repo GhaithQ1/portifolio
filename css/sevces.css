@@ -54,13 +54,6 @@ height: auto;
     margin-right: auto;
   }
 
-  @media(max-width:1300px){
-    .container {
-        padding-left: 120px;
-        padding-right: 120px;
-
-    }
-  }
   @media(max-width:768px){
     .container {
         padding-left: 20px;
@@ -91,7 +84,7 @@ height: auto;
       }
 
 .servces .container .des{
-    width: 30%;
+    width: 40%;
 }
 @media(max-width:1200px){
 .servces .container .des{

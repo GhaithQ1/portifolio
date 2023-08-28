@@ -317,6 +317,11 @@ z-index: 3;
   gap: 40px;
 
 }
+@media(max-width:768px){
+    .skills .content .skills_image{
+        padding-bottom: 50px;
+    }
+}
 
 .skills .content .skills_image h1{
     color: white;

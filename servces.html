@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/hint.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sevces.css">
@@ -17,7 +17,7 @@
     <header>
         <img src="./image/top-left-img.png" alt="">
         <div class="container">
-            <h1 class="cssanimation leFadeInLeft sequence">PORTF<span>. . . .</span>
+            <h1>PORTFOLIO<span>.</span>
                 <h1>
                     <ul>
                         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -32,8 +32,10 @@
         <div class="container" style="position: relative;">
             <div id="particles-js" style="height: 100% ; width: 100%; position: absolute; top: 0; right: 0; "></div>
             <div class="des">
-                <h1><span>My</span> SERVCES<span>.</span></h1>
-                <p>With my attention to innovation and accuracy in detail, I will work hard to achieve your goals and
+                <h1 class="animate__animated animate__flipInX animate__delay-1s my-element"><span>My</span>
+                    SERVCES<span>.</span></h1>
+                <p class="animate__animated animate__zoomIn animate__delay-1s my-element">With my attention to
+                    innovation and accuracy in detail, I will work hard to achieve your goals and
                     provide front-ends that meet user expectations and contribute to the success of your project</p>
             </div>
             <div class="text">
@@ -41,7 +43,7 @@
 
                     <div class=" servces_box swiper-wrapper">
 
-                        <div class="box swiper-slide">
+                        <div class="box swiper-slide ">
                             <i class="icon_servces icon_servces fa-solid fa-palette"></i>
                             <h2>(UI/UX)</h2>
                             <p>My main focus is to create effective and attractive user interfaces. I will design and
@@ -52,7 +54,7 @@
                             <i class="fa-solid fa-arrow-left"></i>
                             <!-- <i class="fa-solid fa-arrow-right"></i> -->
                         </div>
-                        <div class="box swiper-slide">
+                        <div class="box swiper-slide  ">
                             <i class="icon_servces fa-solid fa-pen-to-square"></i>
 
                             <h2>Develop and improve</h2>
@@ -73,7 +75,7 @@
 
                     <div class="servces_box swiper-wrapper">
 
-                        <div class="box swiper-slide">
+                        <div class="box swiper-slide ">
                             <i class="icon_servces fas fa-puzzle-piece"></i>
                             <h2>API</h2>
                             <p>I will expand the capabilities of your interfaces through the integration of APIs. I will
@@ -81,7 +83,7 @@
                                 effective functions. </p>
                             <i class="fa-solid fa-arrow-left"></i>
                         </div>
-                        <div class="box swiper-slide">
+                        <div class="box swiper-slide  ">
                             <i class="icon_servces fas fa-desktop"></i>
 
                             <h2>Responsive user experience</h2>
@@ -105,7 +107,7 @@
             <li class="animate__animated animate__fadeInRight hint--left  my-element animate__delay-1s"
                 aria-label="Serveces"><a href="servces.html"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
             <li class="animate__animated animate__fadeInRight hint--left  my-element animate__delay-1s"
-                aria-label="Projects"><a href=""><i class="fas fa-project-diagram"></i></a></li>
+                aria-label="Projects"><a href="projects.html"><i class="fas fa-project-diagram"></i></a></li>
             <li class="animate__animated animate__fadeInRight hint--left  my-element animate__delay-1s"
                 aria-label="Contact"><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
         </ul>
@@ -115,11 +117,11 @@
             <div class="animate3"></div>
         </div>
 
-        <script src="./scrept.js"></script>
-        <script src="./particles.js"></script>
-        <script src="./nasa.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./js/scrept.js"></script>
+        <script src="./js/particles.js"></script>
+        <script src="./js/nasa.js"></script>
+        \
+        <script src="./js/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
                 effect: "cards",

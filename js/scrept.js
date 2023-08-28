@@ -48,8 +48,6 @@ button_web.addEventListener('click', ()=>{
 const nums = document.querySelectorAll(".box .num");
 const startCunt = (el)=>{
     const goal = el.dataset.goal;
-    console.log(goal)
-    console.log('goal')
     const cunt = setInterval(()=>{
         el.textContent++;
         if(el.textContent == goal){
@@ -68,7 +66,16 @@ setTimeout(()=>{
 
 
 
-const anima = document.querySelectorAll('.images > div');
+
+
+
+
+
+
+
+
+ 
+
 
 
 
