@@ -26,7 +26,6 @@
     .skills .container{
         flex-direction: column;
         justify-content: center;
-        padding: 0 10px;
         height: calc(100vh - 70px);
         align-items: center;
     }

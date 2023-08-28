@@ -43,6 +43,14 @@ overflow: hidden;
         margin-right: auto;
     }
   }
+  @media(max-width:992px){
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
   @media(max-width:768px){
     .container {
         padding-left: 20px;
@@ -156,6 +164,7 @@ header ul a:hover{
     .hero .container{
         flex-direction: column;
         justify-content: center;
+        align-items: start;
     }
     .hero .container .contact{
         width: 90%;
