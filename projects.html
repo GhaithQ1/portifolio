@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/projects.css">
     <title>Projects</title>
-</head>
+</head data-barba="wrapper">
 
-<body>
+<body data-barba="wrapper">
     <header>
         <img src="./image/top-left-img.png" alt="">
         <div class="container" style="position: relative;">
@@ -28,7 +28,7 @@
                     </ul>
         </div>
     </header>
-    <div class="project">
+    <div class="project" data-barba="container" data-barba-namespace="project">
         <img class="light" src="./image/top-left-img.png" alt="">
         <div class="container">
             <div class="des">
@@ -152,14 +152,14 @@
 
 
 
-        <script src="./js/scrept.js"></script>
-
+        
         <script src="./js/particles.js"></script>
         <script src="./js/nasa.js"></script>
         <script src="./js/jquery-1.11.1.min.js"></script>
         <script src="./js/owl.carousel.min.js"></script>
         <script src="./js/projects.js"></script>
-
+        <script src="./js/barba.js"></script>
+        <script src="./js/scrept.js"></script>
         <script>
 $('.owl-carousel').owlCarousel({
     loop:false,

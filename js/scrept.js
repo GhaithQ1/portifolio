@@ -16,7 +16,19 @@ const enterTransition = ()=>{
     },[100 + (500 * transitionDivs.length)])
 })
 }
-enterTransition()
+
+barba.init({
+    transitions: [{
+      name: 'default-transition',
+      enter() {
+        enterTransition()
+      },
+      once(){
+        enterTransition()
+      },
+    }]
+  });
+
 
 const web = document.querySelector('.web')
 const tools = document.querySelector('.tools')

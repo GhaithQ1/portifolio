@@ -13,7 +13,7 @@
     <title>Servces</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
     <header>
         <img src="./image/top-left-img.png" alt="">
         <div class="container">
@@ -26,7 +26,7 @@
                     </ul>
         </div>
     </header>
-    <div class="servces ">
+    <div class="servces " data-barba="container" data-barba-namespace="services">
         <img class="light" src="./image/top-left-img.png" alt="">
 
         <div class="container" style="position: relative;">
@@ -117,11 +117,11 @@
             <div class="animate3"></div>
         </div>
 
-        <script src="./js/scrept.js"></script>
         <script src="./js/particles.js"></script>
         <script src="./js/nasa.js"></script>
-        \
         <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/barba.js"></script>
+        <script src="./js/scrept.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
                 effect: "cards",

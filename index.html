@@ -11,7 +11,7 @@
     <title>Home</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
     <header>
         <img src="./image/top-left-img.png" alt="">
         <div class="container">
@@ -24,7 +24,7 @@
                     </ul>
         </div>
     </header>
-    <div class="hero">
+    <div class="hero" data-barba="container" data-barba-namespace="home">
         <div class="container">
             <div class="contact">
                 <h2 class="animate__animated animate__slideInDown my-element animate__delay-1s">Welcome to my portfolio
@@ -67,10 +67,11 @@
         <div class="animate3"></div>
     </div>
 
-    <script src="./js/scrept.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
-\
+    <script src="./js/barba.js"></script>
+    <script src="./js/scrept.js"></script>
+
 
 </body>
 
